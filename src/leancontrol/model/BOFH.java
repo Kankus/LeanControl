@@ -14,8 +14,8 @@ public class BOFH extends OrgScope {
 
     // Stub
     @Override
-    OrgScope[] getChildren() {
-        OrgScope[] children = {
+    Subscription[] getChildren() {
+        Subscription[] children = {
             new Subscription(),
             new Subscription()
         };

@@ -9,13 +9,13 @@ public class Subscription extends OrgScope{
 
     // Stub
     @Override
-    OrgScope getParent() {
+    BOFH getParent() {
         return new BOFH();
     }
 
     @Override
-    OrgScope[] getChildren() {
-        OrgScope[] children = {
+    OrgUnit[] getChildren() {
+        OrgUnit[] children = {
             new OrgUnit(),
             new OrgUnit()
         };

@@ -7,7 +7,7 @@ public class Product extends OrgScope{
     }
 
     // Stub
-    OrgScope getParent() {
+    OrgUnit getParent() {
         return new OrgUnit();
     }
 
