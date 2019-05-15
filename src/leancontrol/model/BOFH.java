@@ -1,6 +1,6 @@
 package leancontrol.model;
 
-// ToDo: Singleton at top of org tree
+// ToDo: Singleton at top of multi-tenanted subscription / org tree
 public class BOFH extends OrgScope {
     BOFH() {
         Type = OrgScopeType.BOFH;
