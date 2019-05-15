@@ -1,3 +1,4 @@
+import leancontrol.model.*;
 import java.util.*;
 
 public class Main
@@ -6,15 +7,18 @@ public class Main
 	{
 		System.out.println("Hello World!");
 
-		Scanner input = new Scanner(System.in);
+		PrintDisplayableList(Role.GetValidRoles());
 
-		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
 
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
+	}
 
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
+	static void PrintDisplayableList(Displayable displayableItems[]) {
+		for (Displayable displayableItem: displayableItems) {
+			PrintDisplayable(displayableItem);
+		}
+	}
+
+	static void PrintDisplayable(Displayable displayableItem) {
+		System.out.println(displayableItem.getClass().getSimpleName() + ": " + displayableItem.DisplayName);
 	}
 }
