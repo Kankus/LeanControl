@@ -1,7 +1,7 @@
 package leancontrol.model;
 
 public enum OrgScopeType {
-    BOFH,
+    Platform,
     Subscription,
     ControlFunction,
     OrgUnit,

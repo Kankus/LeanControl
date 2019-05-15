@@ -1,16 +1,30 @@
 package leancontrol.model;
 
-// Implements Multitenanneted org hierarchy as BOFH > Subscription > OrgUnit (recursive) > ProductGroup > Product
-abstract class OrgScope extends Displayable {
 
-    OrgScopeType Type;
-    int Id;
-    String Key;
-    String DisplayName;
-    int ParentId;
+public abstract class OrgScope extends Displayable {
 
-    abstract OrgScope getParent();
+    public OrgScopeType Type;
+    private int Id;
 
-    abstract OrgScope[] getChildren();
+    OrgScope (int id, String displayName) {
+        Id = id;
+        DisplayName = displayName;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public OrgScope getParent() {
+        return new DummyOrgBuilder().getParent(this);
+    }
+
+    public OrgScope[] getChildren() {
+        return new DummyOrgBuilder().getChildren(this);
+    }
+
+    public boolean hasChildren() {
+        return (getChildren().length != 0);
+    }
 }
 
