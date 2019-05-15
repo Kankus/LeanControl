@@ -1,6 +1,6 @@
 package leancontrol.model;
 
-// Singleton at top of org tree
+// ToDo: Singleton at top of org tree
 public class BOFH extends OrgScope {
     BOFH() {
         Type = OrgScopeType.BOFH;
@@ -15,11 +15,9 @@ public class BOFH extends OrgScope {
     // Stub
     @Override
     Subscription[] getChildren() {
-        Subscription[] children = {
-            new Subscription(),
-            new Subscription()
+        return new Subscription[] {
+                new Subscription(),
+                new Subscription()
         };
-
-        return children;
     }
 }

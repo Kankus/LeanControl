@@ -15,11 +15,10 @@ public class Subscription extends OrgScope{
 
     @Override
     OrgUnit[] getChildren() {
-        OrgUnit[] children = {
+        return new OrgUnit[] {
             new OrgUnit(),
             new OrgUnit()
         };
 
-        return children;
     }
 }
