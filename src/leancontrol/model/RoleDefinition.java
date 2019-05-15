@@ -1,6 +1,6 @@
 package leancontrol.model;
 
-public class Role extends Displayable{
+public class RoleDefinition extends Displayable{
 
     public enum RoleType {
         Admin,
@@ -14,17 +14,17 @@ public class Role extends Displayable{
     }
 
     public enum RoleLevel {
-        Lead,
+        Primary,
         Delegate
     }
 
-    public OrgScopeType RoleScope;
+    public OrgScopeType ScopeType;
     public RoleType Role;
     public RoleLevel Level;
 
-    Role(OrgScopeType roleScope, RoleType role, RoleLevel level, String displayName, String description) {
+    RoleDefinition(OrgScopeType scopeType, RoleType role, RoleLevel level, String displayName, String description) {
 
-        RoleScope = roleScope;
+        ScopeType = scopeType;
         Role = role;
         Level = level;
         DisplayName = displayName;

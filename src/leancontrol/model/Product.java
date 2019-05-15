@@ -4,7 +4,7 @@ package leancontrol.model;
 public class Product extends OrgScope{
     Product(int id, String displayName) {
         super(id, displayName);
-        Type = OrgScopeType.Product;
+        ScopeType = ScopeType.Product;
     }
 
 }

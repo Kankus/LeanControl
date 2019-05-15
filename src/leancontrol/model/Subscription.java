@@ -5,7 +5,7 @@ public class Subscription extends OrgScope{
 
     Subscription(int id, String displayName) {
         super(id, displayName);
-        Type = OrgScopeType.Subscription;
+        ScopeType = ScopeType.Subscription;
     }
 
 }

@@ -4,7 +4,7 @@ package leancontrol.model;
 public class Platform extends OrgScope {
     Platform() {
         super(0, "Single Platform");
-        Type = OrgScopeType.Platform;
+        ScopeType = ScopeType.Platform;
     }
 
 }

@@ -3,7 +3,7 @@ package leancontrol.model;
 
 public abstract class OrgScope extends Displayable {
 
-    public OrgScopeType Type;
+    public OrgScopeType ScopeType;
     private int Id;
 
     OrgScope (int id, String displayName) {

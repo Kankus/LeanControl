@@ -15,7 +15,7 @@ public class DummyOrgBuilder implements iOrgBuilder {
     @Override
     // Totally fake implementation
     public OrgScope getParent(OrgScope child) {
-        switch (child.Type) {
+        switch (child.ScopeType) {
             case Platform:
                 return child;
             case Subscription:
@@ -39,7 +39,7 @@ public class DummyOrgBuilder implements iOrgBuilder {
     // Totally fake implementation
     public OrgScope[] getChildren(OrgScope parent) {
 
-        switch (parent.Type) {
+        switch (parent.ScopeType) {
             case Platform:
                 return new OrgScope[]{
                         new Subscription(0, "  Client subscription 1"),

@@ -8,7 +8,7 @@ public class OrgUnit extends OrgScope{
 
     OrgUnit(int id, String displayName, boolean isTopLevelOrgUnit, boolean isBottomLevelOrgUnit) {
         super(id, displayName);
-        Type = OrgScopeType.OrgUnit;
+        ScopeType = ScopeType.OrgUnit;
         IsTopLevelOrgUnit = isTopLevelOrgUnit;
         IsBottomLevelOrgUnit = isBottomLevelOrgUnit;
     }
