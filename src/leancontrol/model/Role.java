@@ -3,7 +3,7 @@ package leancontrol.model;
 public class Role extends Displayable{
 
 
-    public enum RoleType {
+    public enum  RoleType {
         Admin,
         OrgUnitLead,
         ControlLead,
@@ -51,8 +51,8 @@ public class Role extends Displayable{
             new ControlRole(ControlFunction.GetControlFunction("EA"), OrgScopeType.ControlFunction, RoleType.ControlSME, RoleLevel.Lead, "Control Function SME", "Control SME assigned to a bottom level Org Unit and by default all the Products it contains."),
             new ControlRole(ControlFunction.GetControlFunction("EA"), OrgScopeType.ControlFunction, RoleType.ControlSME, RoleLevel.Lead, "Control Function SME Delegate", "Delegate of a Control SME to assist at Org Unit level.  May share the load by being assigned specific Products in the bottom level Org Unit."),
             // Product Team roles
-            new Role(OrgScopeType.ControlFunction, RoleType.ControlLead, RoleLevel.Delegate, "Control Function Co-ordinator", "Delegate of a Control Function Lead"),
-
+            new Role(OrgScopeType.ControlFunction, RoleType.ControlLead, RoleLevel.Delegate, "Control Function Co-ordinator", "Delegate of a Control Function Lead")
+			
 
     };
 }
